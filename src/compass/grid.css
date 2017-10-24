@@ -377,7 +377,6 @@ nav .navigator_list li:hover ul li:hover a {
 nav .navigator_cart {
   float: left;
   cursor: pointer;
-  background-image: url(../../img/car2.png);
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: auto auto;
