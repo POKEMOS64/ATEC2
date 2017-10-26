@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>SDK</title>
-	
+	<meta content="width=device-width, initial-scale=0.8, user-scalable=no" name="viewport">
 	<link rel="stylesheet" href="css/compass/reset.css">
 	<link rel="stylesheet" href="css/compass/grid.css">
 	<link rel="stylesheet" href="css/susy.css">
@@ -43,51 +43,25 @@
 			<li><a href="#">Контакты</a></li>
 		</ul>
 			<div class="navigator_cart">
-			<img src="img/car.png" alt="">
+			<img src="./img/car.png" alt="">
 		</div>
 		</div>
 	</nav>
 	<main class="content">
 		<section class="line">
 				<div class="middle">
-					<h1>Прайс-онлайн</h1>
+					<h1>Оформление заказа</h1>
 				</div>
-		</section>
-		<section class="stages">
-			<div class="middle">
-				<p>Этапы формирования заказа:</p>
-				<div class="stages_step">
-					<div>
-						1. Поиск запчасти
-					</div>
-					<div class="active">
-						2. Добавление в корзину
-					</div>
-					<div>
-						3. Уточнение информации
-					</div>
-					<div>
-						4. Оформление заказа
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="search">
-			<div class="middle search">
-				<form action="#" class="search_form">
-				<p class="search_form_click"><input type="search" name="q" placeholder="048561"> 
-   			<input type="submit" value="ПОИСК"></p>
-			</form>
-			</div>
 		</section>
 		<section class="article">
 			<div class="middle">
+			<div class="article_oformlen">
 			<div class="article_component_tabs">
 				<div class="article_component_tabs_name">
-					Зап. часть No: 658583635
+					Сейчас в корзине
 				</div>
 				<div class="article_component_tabs_block">
-					<div class="element start">
+					<div class="element start kabinet">
 						<div >Дилер</div>
 						<div >Марка</div>
 						<div >Номер детали</div>
@@ -96,9 +70,8 @@
 						<div>Дата обновления</div>
 						<div>Наличие</div>
 						<div>Цена</div>
-						<div>В корзину</div>
 					</div>
-					<div class="element">
+					<div class="element kabinet">
 						<div >1</div>
 						<div >Mitsubishi</div>
 						<div >8301C854</div>
@@ -108,9 +81,8 @@
 						<div>5 сен 2017</div>
 						<div>10 шт</div>
 						<div>232,98</div>
-						<div><img src="img/car_black.png" alt=""></div>
 					</div>
-					<div class="element">
+					<div class="element kabinet">
 						<div >1</div>
 						<div >Mitsubishi</div>
 						<div >8301C854</div>
@@ -120,9 +92,8 @@
 						<div>5 сен 2017</div>
 						<div>10 шт</div>
 						<div>232,98</div>
-						<div><img src="img/car_black.png" alt=""></div>
 					</div>
-					<div class="element">
+					<div class="element kabinet">
 						<div >1</div>
 						<div >Mitsubishi</div>
 						<div >8301C854</div>
@@ -132,12 +103,52 @@
 						<div>5 сен 2017</div>
 						<div>10 шт</div>
 						<div>232,98</div>
-						<div><img src="img/car2.png" alt=""></div>
 					</div>
 				</div>
-				<div class="article_component_tabs_text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, illum, non. Pariatur perferendis voluptas, facilis maiores et ullam enim, culpa quia nisi non odit modi quasi? Iusto modi fugiat doloremque est debitis, aliquam dolorem sapiente perferendis nihil libero, quidem in et ducimus, quae deserunt voluptatum ut! Natus accusamus magnam, commodi aspernatur dolore sed. Neque quam distinctio dignissimos dolorem eveniet quisquam aspernatur quidem recusandae sit atque enim illum eius adipisci, ex beatae totam debitis ullam tempora temporibus aliquam cumque odit dolor necessitatibus, eaque. Blanditiis pariatur alias obcaecati cum libero officia aliquam est minima accusantium atque corrupti omnis inventore ipsa, quidem asperiores!
+				
+			</div>
+				<div class="article_lk_registrations">
+					<form action="[[~[[*id]]]]" method="post">
+							<div>
+								<label for="name">Имя</label>
+								<input id="name" name="name" placeholder="Имя" type="text" required /> 
+								</div>
+							<div>
+								<label for="fam">Фамилия</label>
+								<input id="fam" placeholder="Фамилия" type="text" name="phone" required /> 
+							</div>
+							<div>
+								<label for="ot">Отчество</label>
+								<input id="ot" placeholder="Отчество" type="text" name="phone" required /> 
+							</div>
+							
+							<div>
+								<label for="gorod">Город</label>
+								<input id="gorod" placeholder="Город" type="text" name="phone" required /> 
+							</div>
+							<div>
+								<label for="ulica">Улица</label>
+								<input id="ulica" placeholder="Улица" type="text" name="phone" required /> 
+							</div>
+							<div>
+								<label for="mail">Почта</label>
+								<input id="mail" placeholder="Почта@mail.ru" type="text" name="faq" required /> 
+							</div>
+							
+							<div>
+								<label for="userPassword">Пароль</label>
+								<input id="userPassword" type="password" placeholder="" name="faq" required /> 
+							</div>
+							<div>
+								<label for="userPassword">Повторите пароль</label>
+								<input id="userPassword" type="password" placeholder="" name="faq" required /> 
+							</div>
+							
+							<div class="button_footer">
+								<input type="submit" name="submitQuestion" value="Оформить"> </div>
+					</form>
 				</div>
+				
 			</div>
 			</div>
 		</section>

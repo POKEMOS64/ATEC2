@@ -126,7 +126,7 @@ header .middle, nav .navigator_list li:hover ul, main .search_form p.search_form
   align-items: stretch;
 }
 
-header .header_right_menu .right_menu_form {
+header .header_right_menu .right_menu_form, main .article_lk_registrations form {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -232,7 +232,8 @@ body {
 
 header .middle {
   background-image: url(../../img/head_bg.png);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
 }
 header .header_logo {
@@ -316,6 +317,21 @@ header .header_right_menu a {
 }
 header .header_right_menu a:hover {
   text-decoration: underline;
+}
+header .header_right_menu div.autor {
+  padding-top: 0.45em;
+  padding-bottom: 0.45em;
+}
+header .header_right_menu div.autor span {
+  display: block;
+  padding-left: 1em;
+  margin-bottom: 0.2rem;
+}
+header .header_right_menu div.autor p {
+  background: #000;
+  padding-top: 0.45em;
+  padding-bottom: 0.45em;
+  color: #ffc723;
 }
 
 nav .middle {
@@ -466,6 +482,11 @@ main .article_box_text {
   color: #000;
   padding-top: 3em;
   padding-bottom: 3em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+main .article_box_text h1 {
+  text-align: center;
 }
 main .article_box_text p {
   text-align: center;
@@ -573,6 +594,15 @@ main .article_component_tabs_name {
   background: linear-gradient(to bottom, #e8e8e8 0%, #c5c5c4 51%, #c5c5c4 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e8', endColorstr='#c5c5c4',GradientType=0 );
 }
+main .article_component_tabs_name input[type="submit"] {
+  background: #ffc723;
+  border: 0;
+  border-bottom: 3px solid #a77a00;
+  color: #3d3d3d;
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+}
 main .article_component_tabs_block .element {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -600,11 +630,51 @@ main .article_component_tabs_block .element div {
 main .article_component_tabs_block .element div:last-child {
   border-right: 2px solid #7188a3;
 }
+main .article_component_tabs_block .element.kabinet {
+  padding-left: 0;
+  padding-right: 0;
+}
 main .article_component_tabs_text {
   margin-top: 3em;
   margin-bottom: 3em;
   padding-left: 3rem;
   padding-right: 3rem;
+}
+main .article_lk_registrations form {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+main .article_lk_registrations form div {
+  margin-top: 0.45em;
+  margin-bottom: 0.45em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #252525;
+  border-radius: 5px;
+}
+main .article_lk_registrations form div input {
+  display: block;
+  margin: 0 auto;
+}
+main .article_lk_registrations form div input[type="submit"] {
+  background: #ffc723;
+  border: 0;
+  border-bottom: 3px solid #a77a00;
+  color: #3d3d3d;
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+}
+main .article_lk_registrations form div label {
+  color: #000;
+  padding-left: 1rem;
+}
+main .article_lk_registrations form div p {
+  display: block;
+  margin: 0 auto;
+  color: #000;
 }
 main .maps .middle {
   padding-bottom: 1.5em;
