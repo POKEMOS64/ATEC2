@@ -38,6 +38,9 @@ header{
 				width: span(12);
 				
 			}
+			div{
+				width: span(12);
+			}
 			
 		}
 	}
@@ -123,7 +126,9 @@ main{
 			width: span(12);
 			&_name{
 				width: span(12);
-
+				input[type="submit"]{
+					width: span(30%);
+				}
 			}
 			&_block{
 				.element{
@@ -140,6 +145,43 @@ main{
 			}
 		}
 		//Поиск
+		//registration
+		&_lk_registrations{
+			width: 100%;
+			form{
+				width: span(12);
+				div{
+					width: 30%;
+					input{
+						width: 50%;
+					}
+					p{
+						width: 50%;
+					}
+				}
+			}
+			&.kabinet{
+				width: 25%;
+				form{
+					div{
+						width: 80%;
+						p{
+							width: 90%;
+						}
+					}
+				}
+			}
+		}
+		& .lk{
+			width: 75%;
+		}
+		//registration
+		//oformlen
+		&_oformlen{
+			width: span(12);
+		}
+		//oformlen
+		
 	}
 	.maps{
 		.middle{

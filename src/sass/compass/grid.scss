@@ -19,7 +19,8 @@ body{
 header{
 	.middle{
 		background-image: url(../../img/head_bg.png);
-		background-size: contain;
+		background-size: cover;
+		background-repeat: no-repeat;
 		background-position: center;
 		@extend %flex_sb;
 		
@@ -98,6 +99,19 @@ header{
 				display: block;
 				&:hover{
 					text-decoration: underline;
+				}
+			}
+			div.autor{
+				@include rhythm-padding(0.3);
+				span{
+					display: block;
+					padding-left: 1em;
+					margin-bottom: 0.2rem;
+				}
+				p{
+					background: #000;
+					@include rhythm-padding(0.3);
+					color: #ffc723;
 				}
 			}
 		}
@@ -207,7 +221,6 @@ nav{
 
 main{
 	.content{
-		
 	}
 	.search{
 		.middle{
@@ -273,13 +286,16 @@ main{
 		}
 	}
 	.article{
-		
 		.middle{
 			@extend %flex_sb_st;
 		}
 		&_box_text{
 			color: #000;
 			@include rhythm-padding(2);
+			@include LpaddingR(1rem);
+			h1{
+				text-align: center;
+			}
 			p{
 				text-align: center;
 				@include rhythm-margins(1);
@@ -382,9 +398,19 @@ main{
 				background: -webkit-linear-gradient(top, rgba(232,232,232,1) 0%,rgba(197,197,196,1) 51%,rgba(197,197,196,1) 100%);
 				background: linear-gradient(to bottom, rgba(232,232,232,1) 0%,rgba(197,197,196,1) 51%,rgba(197,197,196,1) 100%);
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e8', endColorstr='#c5c5c4',GradientType=0 );
+				input[type="submit"]{
+					background: #ffc723;
+								border: 0;
+								border-bottom: 3px solid #a77a00;
+							  color: #3d3d3d;
+								font-family: "Russo One", sans-serif;
+								font-weight: 400;
+							cursor: pointer;
+				}
 			}
 			&_block{
 				.element{
+					
 					&.start{
 						color: #fff;
 						background: rgb(144,160,180);
@@ -410,6 +436,9 @@ main{
 						
 						
 					}
+					&.kabinet{
+						@include LpaddingR(0);
+					}
 				}
 			}
 			&_text{
@@ -418,6 +447,46 @@ main{
 			}
 		}
 		//Поиск
+		//registration
+		&_lk_registrations{
+			form{
+				@extend %flex_sb_col;
+				@include rhythm-margins(1);
+				div{
+					@include rhythm-margins(0.3);
+					@include rhythm-padding(0.5);
+					@include LmarginR(auto);
+					border: 2px solid #252525;
+					border-radius: 5px;
+					input{
+						display: block;
+						margin: 0 auto;
+						&[type="submit"]{
+							  background: #ffc723;
+								border: 0;
+								border-bottom: 3px solid #a77a00;
+							  color: #3d3d3d;
+								font-family: "Russo One", sans-serif;
+								font-weight: 400;
+							cursor: pointer;
+						}
+					}
+					label{
+						color: #000;
+						padding-left: 1rem;
+					}
+					p{
+						display: block;
+						margin: 0 auto;
+						color: #000;
+					}
+				}
+			}
+			&.kabinet{
+				
+			}
+		}
+		//registration
 	}
 	.maps{
 		.middle{

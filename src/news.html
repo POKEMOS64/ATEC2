@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SDK</title>
+	<meta content="width=device-width, initial-scale=0.8, user-scalable=no" name="viewport">
+	<link rel="stylesheet" href="css/compass/reset.css">
+	<link rel="stylesheet" href="css/compass/grid.css">
+	<link rel="stylesheet" href="css/susy.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Play:400,700|Russo+One&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="middle">
+			<div class="header_logo">
+				<img src="img/logo.jpg" alt="">
+			</div>
+			
+			<div class="header_right_menu">
+				<p>Войдите в Ваш аккаунт</p>
+				<form class="right_menu_form" action="#">
+				<div class="user">
+					<input type="text" placeholder="Ваше имя">
+				</div>
+				<div class="lock">
+					<input  type="text" placeholder="Ваш пароль">
+				</div>
+					<input type="submit" value="Войти">
+				</form>
+				<a href="#">Зарегистрироваться</a>
+			</div>
+		</div>
+	</header>
+	<nav class="navigator">
+		<div class="middle">
+			<ul class="navigator_list">
+			<li><a href="#">Главная</a></li>
+			<li><a href="#">О компании</a></li>
+			<li><a href="#">Новости</a></li>
+			<li><a href="#">Сотрудничество</a></li>
+			<li><a href="#">Для клиентов</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+			<div class="navigator_cart">
+			<img src="./img/car.png" alt="">
+		</div>
+		</div>
+	</nav>
+	<main class="content">
+		
+		<section class="article">
+			<div class="middle">
+				<div class="article_lk_registrations">
+					<form action="[[~[[*id]]]]" method="post">
+							<div>
+								<label for="name">Имя</label>
+								<input id="name" name="name" placeholder="Имя" type="text" required /> 
+								</div>
+							<div>
+								<label for="fam">Фамилия</label>
+								<input id="fam" placeholder="Фамилия" type="text" name="phone" required /> 
+							</div>
+							<div>
+								<label for="ot">Отчество</label>
+								<input id="ot" placeholder="Отчество" type="text" name="phone" required /> 
+							</div>
+							
+							<div>
+								<label for="gorod">Город</label>
+								<input id="gorod" placeholder="Город" type="text" name="phone" required /> 
+							</div>
+							<div>
+								<label for="ulica">Улица</label>
+								<input id="ulica" placeholder="Улица" type="text" name="phone" required /> 
+							</div>
+							<div>
+								<label for="mail">Почта</label>
+								<input id="mail" placeholder="Почта@mail.ru" type="text" name="faq" required /> 
+							</div>
+							
+							<div>
+								<label for="userPassword">Пароль</label>
+								<input id="userPassword" type="password" placeholder="" name="faq" required /> 
+							</div>
+							<div>
+								<label for="userPassword">Повторите пароль</label>
+								<input id="userPassword" type="password" placeholder="" name="faq" required /> 
+							</div>
+							
+							<div class="button_footer">
+								<input type="submit" name="submitQuestion" value="Зарегистрироваться"> </div>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="middle">
+		<ul class="footer_menu">
+			<li>
+				<a href="#">Главная</a>
+			</li>
+			
+			<li>
+				<a href="#">инфо</a>
+			</li>
+			
+			<li>
+				<a href="#">ваши заказы</a>
+			</li>
+			
+			<li>
+				<a href="#">корзина</a>
+			</li>
+		</ul>
+		</div>
+	</footer>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/index.js"></script>	
+</body>
+</html>
